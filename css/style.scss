@@ -307,6 +307,56 @@ section{
     }
 }
 
+.home-courses{
+    .slide{
+        text-align: center;
+        position: relative;
+        width: 30rem;
+        background: $light-white;
+        overflow: hidden;
+
+        &:hover .content{
+            bottom:0;
+        }
+        
+        .image{
+            padding:2rem;
+
+            img{
+                width: 100%;
+                margin-bottom:1.5rem
+            }
+
+            h3{
+                @include titleText(2rem);
+
+            }
+        }
+
+        .content{
+            position: absolute;
+            bottom: -100%; right: 0; left: 0;
+            background: $black;
+            padding: 2rem 3rem;
+            
+            h3{
+                @include titleText(2rem);
+                color:$white;
+            }
+            
+            p{
+                padding: 1rem 0;
+                @include graphText(1.5rem);
+                color: $light-white;
+            }
+
+            .btn:hover{
+                background: $black;
+            }
+        }
+    }
+}
+
 
 .footer{
     background: $light-green;
@@ -381,28 +431,6 @@ section{
         }
     }
 }
-
-// //mine
-
-// .subjects .box-container{
-//     display: flex;
-    
-//     align-items: center;
-//     justify-content: center;
-//     padding: 2rem 3rem;
-//     width: cover;
-
-//     .box{
-//         size: 50px;
-//     }
-// }
-
-
-// //mine end
-
-
-
-
 
 
 
