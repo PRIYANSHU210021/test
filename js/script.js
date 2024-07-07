@@ -57,7 +57,6 @@ var swiper = new Swiper(".home-courses-slider", {
         },
         991: {
           slidesPerView: 3,
-          spaceBetween: 50,
         },
       },
 });

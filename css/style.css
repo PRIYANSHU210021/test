@@ -10,6 +10,10 @@
   transition: all 0.2s linear;
 }
 
+img {
+  user-select: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -28,11 +32,34 @@ section {
   padding: 5rem 10%;
 }
 
+.heading-link {
+  text-align: center;
+  background: url(../images/about_us_background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading-link h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.heading-link p {
+  font-size: 2rem;
+  line-height: 2;
+  color: #777;
+}
+.heading-link p a {
+  color: #0eb582;
+}
+.heading-link p a:hover {
+  text-decoration: underline;
+}
+
 .heading {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 3.5rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
 }
 
@@ -88,7 +115,7 @@ section {
 .header .navbar a {
   margin-right: 2rem;
   font-size: 1.75rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
 }
 .header .navbar a:hover {
@@ -147,7 +174,7 @@ section {
 }
 .account-form form h3 {
   font-size: 2.5rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
   padding-bottom: 0.5rem;
   text-transform: uppercase;
@@ -205,7 +232,7 @@ section {
 }
 .home .slide .content h3 {
   font-size: 4.5rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
   color: #fff;
 }
@@ -251,7 +278,7 @@ section {
 }
 .subjects .box-container h3 {
   font-size: 2.5rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
 }
 .subjects .box-container p {
@@ -272,7 +299,7 @@ section {
   bottom: 0;
 }
 .home-courses .slide .image {
-  padding: 2rem;
+  padding: 1rem;
 }
 .home-courses .slide .image img {
   width: 100%;
@@ -280,7 +307,7 @@ section {
 }
 .home-courses .slide .image h3 {
   font-size: 2rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
 }
 .home-courses .slide .content {
@@ -293,7 +320,7 @@ section {
 }
 .home-courses .slide .content h3 {
   font-size: 2rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
   color: #fff;
 }
@@ -308,6 +335,60 @@ section {
   background: #444;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.about .image {
+  flex: 1 1 40rem;
+}
+.about .image img {
+  width: 100%;
+}
+.about .content {
+  flex: 1 1 40rem;
+}
+.about .content .about-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.about .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+.about .content .icon-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+.about .content .icon-container .icons {
+  text-align: center;
+  padding: 2rem 2rem;
+  border: 0.1rem solid #0eb582;
+  background: #f0fdfa;
+}
+.about .content .icon-container .icons img {
+  height: 5rem;
+  margin-bottom: 0.5rem;
+}
+.about .content .icon-container .icons h3 {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+.about .content .icon-container .icons span {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
 .footer {
   background: #f0fdfa;
 }
@@ -318,7 +399,7 @@ section {
 }
 .footer .box-container .box h3 {
   font-size: 2.2rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
   padding: 1rem 0;
 }
@@ -370,7 +451,7 @@ section {
   margin-top: 3rem;
   padding-top: 3rem;
   font-size: 2rem;
-  text-transfor: capitalize;
+  text-transform: capitalize;
   color: #444;
   border-top: 0.1rem solid #0eb582;
 }
@@ -435,5 +516,8 @@ section {
   }
   .heading {
     font-size: 3rem;
+  }
+  .about .content .about-title {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
