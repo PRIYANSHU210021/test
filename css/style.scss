@@ -275,6 +275,7 @@ section{
             h3{
                 @include titleText(4.5rem);
                 color: $white;
+                text-shadow: 0 5px 5px $black;
                 // font-family: poppins;
                 // line-height: 50px;
             }
